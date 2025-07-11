@@ -201,3 +201,98 @@ a {
   font-weight: 700;
   vertical-align: top;
 }
+
+@media (max-width: 430px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #111;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .btn.pulse {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #222;
+    }
+
+    .btn.pulse:active + .dropdown-content,
+    .btn.pulse:hover + .dropdown-content {
+        display: flex;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 1px solid #333;
+        width: 100%;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .page-header .content {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    #textoheader {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #imagen {
+      display: flex;
+      margin: 0 ;
+      width: 200px;
+    }
+
+    .page-main .content {
+        padding: 0 10px;
+    }
+
+    #textomain {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    footer {
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 10px;
+        background-color: #111;
+        color: white;
+    }
+
+    footer a {
+        color: #ccc;
+        text-decoration: underline;
+    }
+}

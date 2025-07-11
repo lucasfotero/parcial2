@@ -156,3 +156,133 @@ a {
   font-weight: 700;
   vertical-align: top;
 }
+
+@media (max-width: 430px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-family: "barlow", sans-serif;
+        background-color: #000000;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #111;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .btn.pulse {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #222;
+    }
+
+    .btn.pulse:active + .dropdown-content,
+    .btn.pulse:hover + .dropdown-content {
+        display: flex;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 1px solid #333;
+        width: 100%;
+    }
+
+    #h1 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #h1 h1 {
+        font-size: 24px;
+    }
+
+    #formulario {
+        padding: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    fieldset {
+        border: none;
+        padding: 0;
+    }
+
+    legend {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    label {
+        margin-top: 10px;
+        font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="mail"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .button {
+        margin-top: 15px;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #444;
+    }
+
+    footer {
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 10px;
+        background-color: #111;
+        color: white;
+    }
+
+    footer a {
+        color: #ccc;
+        text-decoration: underline;
+    }
+}
