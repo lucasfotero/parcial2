@@ -20,22 +20,35 @@
 
 
 <body>
-    <header id="header">
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">FF7</h1>
 
-        <div class="menu">
-            <div id="logo">
-                <img src="/img/Furious-7-logo.png" alt="logo" width="200px">
-            </div>
-            <button class="btn pulse">Menú</button>
-            <div class="dropdown-content">
-                <a href="/Pages/about.html">Sobre la película</a>
-                <a href="/Pages/produccion.html">Producción</a>
-                <a href="/Pages/reparto.html">reparto</a>
-                <a href="/Pages/curiosidades.html">Curiosidades</a>
-                <a href="/Pages/contacto.html">Contacto</a>
-            </div>
-        </div>
+            <label class="labe_hamburguesa" for="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </label>
 
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a href="/Pages/about.html" class="link">Sobre la película</a>
+                </li>
+                <li class="li_links">
+                    <a href="/Pages/curiosidades.html" class="link">curiosidades</a>
+                </li>
+                <li class="li_links">
+                    <a href="/Pages/reparto.html" class="link">reparto</a>
+                </li>
+                <li class="li_links">
+                    <a href="/Pages/produccion.html" class="link">producción</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <video src="/Video/Trailer_FAF7.mkv" autoplay muted width="100%" loop></video>
